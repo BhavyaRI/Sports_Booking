@@ -213,12 +213,12 @@ document.addEventListener("submit", (e) => {
       });
   }
 });
-function showInitialPrompt() {
-  const slotContainer = document.querySelector(".slots");
-  const confirmContainer = document.querySelector(".confirm");
-  confirmContainer.innerHTML = "";
-  slotContainer.innerHTML = "<h3>Please select the venue and date</h3>";
+function initialtext() {
+  const sltcnt = document.querySelector(".slots");
+  const cnfcnt = document.querySelector(".confirm");
+  cnfcnt.innerHTML = "";
+  sltcnt.innerHTML = "<h3>Please select the venue and date</h3>";
 }
 document.addEventListener("DOMContentLoaded", () => {
-  showInitialPrompt();
+  initialtext();
 });
